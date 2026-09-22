@@ -7,7 +7,6 @@ const modalBrand = document.querySelector("#modal-brand");
 const modalName = document.querySelector("#modal-name");
 const modalPrice = document.querySelector("#modal-price");
 
-// Open the modal when a Quick View button is clicked
 quickViewButtons.forEach((button) => {
   button.addEventListener("click", (event) => {
     event.preventDefault();
@@ -29,12 +28,10 @@ quickViewButtons.forEach((button) => {
   });
 });
 
-// Close the modal when the X button is clicked
 closeButton.addEventListener("click", () => {
   modal.style.display = "none";
 });
 
-// Close the modal when clicking outside the modal content
 modal.addEventListener("click", (event) => {
   if (event.target === modal) {
     modal.style.display = "none";

@@ -267,19 +267,14 @@ footer {
   position: fixed;
   inset: 0;
   z-index: 1000;
-
-  /* Dark + blurred backdrop */
   background: rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-
-  /* Center the modal */
   align-items: center;
   justify-content: center;
   padding: 1rem;
 }
 
-/* The actual popup */
 .modal-content {
   position: relative;
   width: min(90%, 700px);
@@ -297,7 +292,6 @@ footer {
   align-items: center;
 }
 
-/* Product image */
 .modal-content img {
   width: 45%;
   max-width: 300px;
@@ -306,7 +300,6 @@ footer {
   object-fit: cover;
 }
 
-/* Product information */
 .modal-info {
   flex: 1;
 }
@@ -326,15 +319,10 @@ footer {
   font-weight: bold;
 }
 
-/* Close X button */
 .modal-close {
-  position: absolute;
-  top: 12px;
-  right: 16px;
-
   border: none;
-  background: transparent;
-
+  background: #222;
+  border-radius: 20px;
   font-size: 2rem;
   line-height: 1;
   cursor: pointer;
@@ -363,7 +351,7 @@ footer {
   cursor: pointer;
 }
 
-.quick-view-btn:hover {
+.quick-view:hover {
   opacity: 0.85;
 }
 
